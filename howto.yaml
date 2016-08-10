@@ -1,0 +1,16 @@
+stakeholders: !!map
+  approver: 'email@hackreactor.com'
+  teams: !!seq
+    - team1
+    - team2
+    - team3
+content: !!map
+  title: 'THIS IS THE TITLE'
+  content: !!seq
+    - This is a sentence that I just wrote
+    - This is an ordered list
+    - More things and all the things
+  author: !!map
+    name: Erik Brown
+    email: erikdbrown@gmail.com
+    link: link to something
