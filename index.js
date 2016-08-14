@@ -1,13 +1,15 @@
 var yaml = require('js-yaml');
 var fs = require('fs');
 
-function readHowTo(path) {
+function readHowTo(path, callback) {
+	var howto;
 	var path = './docs/' + path;
 	fs.readFile(path, 'utf-8', (err, data) => {
 		if (err) {
-			console.log(err);
+			callback(err);
 		} else {
-			console.log(yaml.safeLoad(data));
+			howto = yaml.safeLoad(data);
+			callback(null, howto);
 		}
 	});
 }

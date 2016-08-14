@@ -9,6 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "js-yaml": "^3.6.1"
+    "express": "^4.14.0",
+    "js-yaml": "^3.6.1",
+    "nodemon": "^1.10.0"
   }
 }
